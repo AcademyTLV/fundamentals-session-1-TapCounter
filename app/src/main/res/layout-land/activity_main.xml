@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.fundamentals.academy.britt.tapcounter.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_counter"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/initial_counter"
+        android:textSize="@dimen/counter_text_size" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/green"
+        android:onClick="increaseNumber"
+        android:text="@string/tap"
+        android:textSize="@dimen/counter_text_size" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:onClick="openSecondActivity"
+        android:text="@string/show"
+        android:background="@color/sky_blue"
+        android:textSize="@dimen/counter_text_size" />
+
+</LinearLayout>
